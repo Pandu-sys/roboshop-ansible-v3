@@ -21,7 +21,7 @@
     path: /app
     state: directory
 
-- name: download "{{ component }}"
+- name: "download {{ component }}"
   get_url:
     url: "https://roboshop-artifacts.s3.amazonaws.com/{{ component }}-v3.zip"
     dest: "/tmp/{{ component }}.zip"
@@ -30,4 +30,4 @@
   unarchive:
     src: "/tmp/{{ component }}.zip"
     dest: /app
-    remote_src: yes 
+    remote_src: yes  
