@@ -1,11 +1,9 @@
-ansible_user: ec2-user
-ansible_password: DevOps321
-MONGODB_HOST: mongodb.devopswithrani.online
-REDIS_HOST: redis.devopswithrani.online
-MYSQL_HOST: mysql.devopswithrani.online
-RABBITMQ_HOST: rabbitmq.devopswithrani.online
-CATALOGUE_HOST: catalogue.devopswithrani.online
-USER_HOST: user.devopswithrani.online
-CART_HOST: cart.devopswithrani.online 
-SHIPPING_HOST: shipping.devopswithrani.online 
-PAYMENT_HOST: payment.devopswithrani.online 
+MONGODB_HOST: mongodb-{{ env }}.devopswithrani.online
+REDIS_HOST: redis-{{ env }}.devopswithrani.online
+MYSQL_HOST: mysql-{{ env }}.devopswithrani.online  
+RABBITMQ_HOST: rabbitmq-{{ env }}.devopswithrani.online
+CATALOGUE_HOST: catalogue-{{ env }}.devopswithrani.online
+USER_HOST: user-{{ env }}.devopswithrani.online
+CART_HOST: cart-{{ env }}.devopswithrani.online 
+SHIPPING_HOST: shipping-{{ env }}.devopswithrani.online 
+PAYMENT_HOST: payment-{{ env }}.devopswithrani.online 
