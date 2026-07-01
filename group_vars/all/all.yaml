@@ -2,7 +2,7 @@ MONGODB_HOST: mongodb-{{ env }}.devopswithrani.online
 REDIS_HOST: redis-{{ env }}.devopswithrani.online
 MYSQL_HOST: mysql-{{ env }}.devopswithrani.online  
 RABBITMQ_HOST: rabbitmq-{{ env }}.devopswithrani.online
-CATALOGUE_HOST: catalogue-{{ env }}.devopswithrani.online
+CATALOGUE_HOST: catalogue.backend-alb-{{ env }}.devopswithrani.online
 USER_HOST: user-{{ env }}.devopswithrani.online
 CART_HOST: cart-{{ env }}.devopswithrani.online 
 SHIPPING_HOST: shipping-{{ env }}.devopswithrani.online 
